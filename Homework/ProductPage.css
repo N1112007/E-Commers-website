@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#items{
+    display: flex;         /* Activates flexbox layout */
+    flex-direction: row;   /* Aligns items horizontally */
+    flex-wrap: wrap;       /* Allows cards to wrap to next line on small screens */
+    gap: 20px;             /* Creates exactly 20px space between cards */
+    justify-content: center; /* Centers the row of cards on the screen */
+    padding: 20px;         /* Adds space around the entire section */
+}
+#product-container .card {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    overflow: hidden;
+}
+#product-container .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(13, 110, 253, 0.4); 
+    border-color: #0d6efd; 
+}
+#Footer {
+    width: 100vw; 
+    margin-top: 40px;
+}
+#Footer .card {
+    border-radius: 0; 
+    border: none;
+}
+/* --- GOLD GLOW FILTER BUTTONS --- */
+.custom-gold-btn {
+    border: 2px solid #ffd700; /* Gold border */
+    background-color: transparent;
+    color: black;
+    font-weight: 500;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.custom-gold-btn:hover {
+    transform: translateY(-5px); /* Raises the button */
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.6); /* Gold glow */
+    background-color: #ffd700; /* Fills with gold */
+    color: black;
+}
